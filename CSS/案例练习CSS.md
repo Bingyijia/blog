@@ -33,7 +33,28 @@ display: inline-block;
 
 4. display的属性会破坏transition的动画效果，建议采用visiblity或者将宽高设置为0
 
-5. ​
+5. input创建的按钮，需要主要，在mac下的chrome高度不起作用，需要添加语句
+
+   -webkit-appearance: button;
+   Firefox在私有属性里面额外设置了边框和留白，去掉即可。
+
+   ```css
+   button::-moz-focus-inner,
+   input[type="button"]::-moz-focus-inner { border:none; padding:0; }
+   ```
+
+   css对按钮初始化：
+
+   ```css
+   .btn {
+     	line-height:normal;
+     	/* 解决ff下的padding */
+   	-moz-padding-start:npx;
+     	-moz-padding-end:npx;
+   }
+   ```
+
+   ​
 
 
 
