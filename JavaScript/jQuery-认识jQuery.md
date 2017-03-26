@@ -6,6 +6,10 @@
 
 #### 二.代码编写风格
 
+js变量：字母（不能做为开头），数字，下划线，$ 
+
+jQuery中： jQuery = \$，因为jQuery中绑定了\$与jQuery的调用
+
 #### 三.jQuery对象与DOM对象
 
 jQuery对象转换成DOM对象
