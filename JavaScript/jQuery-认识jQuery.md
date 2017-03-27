@@ -12,6 +12,8 @@ jQuery中： jQuery = \$，因为jQuery中绑定了\$与jQuery的调用
 
 #### 三.jQuery对象与DOM对象
 
+DOM对象转化成jQuery对象，加个$
+
 jQuery对象转换成DOM对象
 
 [index]与get(index)
