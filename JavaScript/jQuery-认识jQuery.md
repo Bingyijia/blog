@@ -157,8 +157,7 @@ s1,s2,s3            $("th,td,.intro")            所有带有匹配选择的元�
     var txt = $("#blin").text();
 ```
 
-+ 使用html来创建dom的方式效率比较高。  远大于： document.createElement();
-
++ 使用html来创建dom的方式效率比较高，如果多次调用，建议加.empty()来清空，清空内存残留防止出现内存泄露。效率远大于： document.createElement();
 + 案例：02动态创建表格.html
 
 ### 5.2 样式操作
